@@ -1,0 +1,124 @@
+print("#chapter 2. 자료형")
+print("\n")
+
+print("#02-3. 변수와 입력")
+print("\n")
+
+print("# 변수 선언과 할당")
+pi = 3.14159265
+r = 10
+print("# 변수 참조")
+print("원주율 =", pi)
+print("반지름 =", r)
+print("원의 둘레 =", 2*pi*r)
+print("원의 넓이 =", pi*r*r)
+print()
+
+string = input("인사말을 입력하세요 > ")
+print(string)
+print(type(string))
+print()
+
+string = input("입력> ")
+print("자료:", string)
+print("자료형: ", type(string))
+print()
+
+string = input("입력> ")
+print("자료: ", string)
+print("자료형: ", type(string))
+print()
+
+# string = input("입력> ")
+# print("입력 + 100:", string + 100)
+# input() 함수로 입력받은 자료는 모두 문자열로 저장되므로 문자열과 숫자는 더할 수 없어서 발행한 에러
+
+string_a = input("입력A> ")
+int_a = int(string_a)
+
+string_b = input("입력B> ")
+int_b = int(string_b)
+
+print("문자열 자료:", string_a + string_b) # 문자열이니 "273"+"52" = 27352
+print("숫자 자료:", int_a + int_b) # 숫자니까 273 + 52 = 325
+print()
+
+output_a = int("52")
+output_b = float("52.273")
+
+print(type(output_a), output_a)
+print(type(output_b), output_b)
+# "52"와 "52.273"이었던 문자열이 52와 52.273이라는 int 자료형과 float형 자료형의 숫자로 변환되는 모습 확인 가
+print()
+
+input_a = float(input("첫 번째 숫자> "))
+input_b = float(input("두 번째 숫자> "))
+
+print("덧셈 결과:", input_a + input_b)
+print("뺄셈 결과:", input_a - input_b)
+print("곱셈 결과:", input_a * input_b)
+print("나눗셈 결과:", input_a / input_b)
+print()
+
+# print("ValueError 예외")
+# print("① 숫자가 아닌 것을 변환하려고 할 때")
+# int("안녕하세요")
+# ValueError: invalid literal for int() with base 10: '안녕하세요'
+# float("안녕하세요")
+# ValueError: could not convert string to float: '안녕하세요'
+# print("② 소수점이 있는 숫자 형식의 문자열을 int() 함수로 변환하려고 할 때")
+# int("52.273")
+# ValueError: invalid literal for int() with base 10: '52.273'
+
+output_a = str(52)
+output_b = str(52.273)
+print(type(output_a), output_a)
+print(type(output_b), output_b)
+print()
+
+print("p.89 확인문제 4")
+str_input = input("숫자 입력> ")
+num_input = float(str_input)
+
+print()
+print(num_input, "inch")
+print((num_input * 2.54), "cm")
+print()
+
+print("p.90 확인문제 5")
+str_input = input("원의 반지름 입력> ")
+num_input = float(str_input)
+print()
+print("반지름: ", num_input)
+print("둘레: ", 2 * 3.14 * num_input)
+print("넓이: ", 3.14 * num_input * num_input)
+print()
+
+print("p.90 확인문제 6")
+print("ver.1")
+a = input("문자열 입력> ")
+b = input("문자열 입력> ")
+print(a, b)
+print(b, a)
+print()
+
+print("ver.2")
+a = input("문자열 입력> ")
+b = input("문자열 입력> ")
+c = a
+
+print(a,b)
+a = b
+b = c
+print(a,b)
+print()
+
+print("ver.3")
+a = input("문자열 입력> ")
+b = input("문자열 입력> ")
+
+print(a, b)
+cmp = a
+a = b
+b= cmp
+print(a, b)
