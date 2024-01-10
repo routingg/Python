@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--
+
+    - method : 'post'
+             : 데이터를 전달 시 'post' 방식 사용
+             : 주소창에 노출되지 않는 방식
+             :
+
+     - default : 'get' 방식
+
+ -->
+
+<form action="#" method="post">
+<table border="1" cellspacing="0" cellpadding="10" width="300px">
+    <tr>
+        <th>ID</th>
+        <td><input type="text" name="id" id=""></td>
+    </tr>
+        <tr>
+        <th>PW</th>
+        <td><input type="text" name="pw" id=""></td>
+    </tr>
+    <tr>
+        <td colspan="2">
+            <input type="submit" value="로그인">
+            <input type="reset" value="다시 입력">
+        </td>
+    </tr>
+</table>
+</form>
+
+<hr>
+
+<h2> 네이버 검색 기능 이용하기 </h2>
+
+<form action="https://search.naver.com/search.naver" >
+    <input type="hidden" name="where" value="nexearch">
+    <input type="hidden" name="sm" value="top_sug.asiw">
+    <input type="hidden" name="fbm" value="0">
+    <input type="hidden" name="ie" value="utf8">
+    <table>
+        <tr>
+            <td> <input type ="text" name="query" id="" ></td>
+            <td> <input type = "submit" value="검색" ></td>
+        </tr>
+    </table>
+
+</form>
+
+
+</body>
+</html>
