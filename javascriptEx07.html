@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM</title>
+    <script>
+        function prt(){
+            let n1 = document.getElementById('num1');
+            let n2 = document.getElementById('num2');
+            let n3 = document.getElementById('result');
+            let o = document.getElementById('operator').value;
+
+            n1 = parseInt(n1.value);
+            n2 = parseInt(n2.value);
+
+            if(o == "+"){
+                n3.value = n1+n2;
+            }
+            else if(o == "-"){
+                n3.value = n1-n2;
+            }
+            else if(o == "*"){
+                n3.value = n1*n2;
+            }
+            else if(o == "/"){
+                n3.value = n1/n2;
+            }
+            else{
+                n3.value = "올바른 사칙연산 기호를 입력하세요";
+            }
+
+            /*
+
+            let num1 = n1.value;
+            let o = operator.value;
+            let num2 = n2.value;
+
+            let msg = num1 + o + num2;
+            let result = eval(msg);
+
+            let n3 = document.getElementById('result');
+            n3.value = result;
+
+            */
+
+
+        }
+
+    </script>
+
+
+</head>
+<body>
+    [사칙연산 계산기]<br>
+    <input type="text" name="" id="num1">
+    <input type="text" name="" id="operator" size="3">
+    <input type="text" name="" id="num2">
+    <input type="button" value="=" onclick="prt()">
+    <input type="text" name="" id="result">
+
+</body>
+</html>

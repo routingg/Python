@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM</title>
+    <script>
+        // 클라이언트 텍스트 필드에 입력하는 정보를 받아서 출력
+        function prt(){
+            //id를 통해 태그가 중복되지 않게 선택해서 사용자가 입력한 데이터를 가져오기
+            let msg = document.getElementById('txt1');
+            console.log(msg);
+
+            // msg 현재 객체. 객체 안에 있는 데이터(클라이언트가 입력하 내용)이 필요
+            console.log(msg.value);
+
+            // 객체에 데이터(값)을 담아서 보낼 수도 있다.
+            msg.value = "쉬는 시간 입니다.";
+
+
+        }
+
+    </script>
+</head>
+<body>
+    <input type="text" name="" id="txt1">
+    <input type="button" value="출력" onclick="prt()">
+
+
+</body>
+</html>
