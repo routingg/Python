@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>javascript</title>
+    <script type="text/javascript">
+        // 프로그래밍 언어
+        // 소스코드 필요
+
+        function prt(){
+            //console.log("Hello");
+            alert("안녕");
+        }
+
+        function prtName(){
+            //console.log("prtName() 함수 호출 중...");
+
+            // 변수 사용
+            // var, let, const
+            let name = prompt("이름을 입력하세요");
+            console.log(name);
+
+            document.write("<h2>"+name +"님 환영합니다~!</h2>");
+
+        }
+    </script>
+</head>
+<body>
+<p>
+    JavaScript : 웹 개발을 이한 프로그래밍 언어 <br>
+
+    1. non-complie 언어 : HTML, SQL, javascript 등 <br>
+                         (내부적으로 parshing 작업을 함)<br>
+    2. compile 언어 : C언어, Python, JAVA, C++, C# 등 <br>
+</p>
+<p>
+    장점 : 단순한 구조와 원칙을 가진 언어이므로 배우기 쉽고 확장성이 높다. <br>
+    단점 : 소스코드가 공개되므로 보안에 취약
+</p>
+
+<input type="button" value="눌러봐" onclick="prt()">
+<!--<button value="이름입력" onclick="prtName()"></button>-->
+<input type="button" value="이름입력" onclick="prtName()">
+
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>제어문</title>
+    <script>
+
+        /*
+        let num1 = prompt('점수를 입력하세요');
+
+        //console.log(num1);
+        num1 = parseInt(num1);
+        //console.log(num1)
+
+        // 조건문
+        if (num1 >= 90) {
+            console.log('합격입니다.');
+        }
+        else if(num1 >= 80){
+            console.log('노력이 필요합니다.');
+        }
+        else{
+            console.log('탈락');
+        }
+        */
+
+/*
+        // 반복문
+        let num2 = prompt('숫자를 입력하세요.');
+        num2 = parseInt(num2);
+
+        let sum = 0;
+
+        for (let i=1; i<=num2; i++){
+            sum += i;
+        }
+
+        console.log('1부터 사용자가 입력한 ' + num2 + '까지의 합은 ' + sum + '입니다.');
+
+        */
+
+        // 버튼 클릭 후 3단 결과를 document에 출력 (table)
+
+        function prtGuGuDan(){
+            //console.log('prtGuGuDan()...');
+
+            document.write("<table border='1' cellspacing='0'>");
+
+            for (let i=1; i<=9; i++){
+                document.write("<tr>");
+                document.write("<td>*3" + i + "=" + (3*i) +"</td>");
+                document.write("</tr>");
+            }
+
+            document.write("</table>");
+        }
+
+        // eval() : 연산자가 가지고 있는 기능을 그대로 사용할 수 있도록 해주는 함수
+        let msg = '3 * 9'
+        let result = eval(msg);
+        console.log(msg);
+        console.log(result);
+
+    </script>
+</head>
+<body>
+
+<input type="button" value="3단출력" onclick="prtGuGuDan()">
+
+</body>
+</html>

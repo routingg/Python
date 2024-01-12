@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>scope</title>
+    <script>
+        // 버튼을 클릭할 때마다 몇 번째 클릭인지 그 횟수를 콘솔에 출력
+
+        //var i = 0;
+
+        let i = 0;
+        let i = 1;              // let은 재선언 불가
+
+
+        function prtClick(){
+            //console.log('click');
+            i++;
+
+            console.log(i + '번째 클릭');
+
+        }
+
+        console.log(i + ' out line');
+
+
+
+    </script>
+</head>
+<body>
+    <button onclick="prtClick()">click</button>
+
+</body>
+</html>
